@@ -18,9 +18,9 @@ class AvailableBranchConrtoller extends Controller
         // return AvailableBranch::where('user_id', $request->user_id)->with(['branch'=>function($q){
         //     $q->where('km', '<=', '300');
         // }])->get();
-        return AvailableBranch::where('user_id', $request->user_id)->whereHas('branch', function($q){
-            $q->where('km', '200');
-        })->get();
+        // return AvailableBranch::where('user_id', $request->user_id)->whereHas('branch', function($q){
+        //     $q->where('km', '200');
+        // })->get();
 
 
     }
